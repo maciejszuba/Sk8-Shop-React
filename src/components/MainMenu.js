@@ -1,19 +1,27 @@
 import React from 'react';
 import MainMenuCategory from './MainMenuCategory';
+import vertImg from '../img/vert-color.jpg';
+import fsImg from '../img/freestyle-color.jpg';
+import accImg from '../img/helmets-color.jpg';
+import shoeImg from '../img/shoes-color.jpg';
 
 function MainMenu(){
 
     return(
         <div className='main-menu'>
+           
             <MainMenuCategory 
-                img={'red'}
+                img={vertImg}
                 text={'STREET/VERT'} />
             <MainMenuCategory 
-                img={'../img/freestyle1.1.jpg'}
+                img={fsImg}
                 text={'FREESTYLE'} />
             <MainMenuCategory 
-                img={'../img/helmets1.1.jpg'}
+                img={accImg}
                 text={'ACCESSORIES'} />
+            <MainMenuCategory 
+                img={shoeImg}
+                text={'FOOTWEAR'} />
     
         </div>
     )

@@ -1,8 +1,63 @@
 .main-menu{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0.75rem;
+    grid-row-gap: 0.75rem;
+    font-family: 'East Sea Dokdo', cursive;
+    padding-top: 2rem;
+
 }
 
 .main-menu-category {
-    width: 500px;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 19rem;
+    height: 15rem;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+
+    &:nth-child(1){
+        grid-column-start: 2;
+        grid-row-end: 2;
+        justify-self: end;
+    }
+
+    &:nth-child(2){
+        grid-column-start: 3;
+        grid-row-end: 2;
+        justify-self: start;
+    }
+
+    &:nth-child(3){
+        grid-column-start: 2;
+        grid-row-end: 3;
+        justify-self: end;
+    }
+
+    &:nth-child(4){
+         grid-column-start: 3;
+         grid-row-end: 3;
+         justify-self: start;
+    }
+
+    a {
+        background-color: rgba($color: #171717, $alpha: 0.7);
+        max-height: 0;
+        width: 100%;
+        margin-top: auto;
+        font-size: 2.5rem;
+        text-align: center;
+        overflow: hidden;
+        text-decoration: none;
+        color: white;
+        transition: max-height 0.5s ease;
+
+        &:hover{
+            color: red;
+        }
+    }
 }
