@@ -6,7 +6,7 @@ function MainMenuCategry({img, text}){
     const handleOnMouseEnter = (e) => {
         e.preventDefault();
         e.currentTarget.style.webkitFilter = 'grayscale(0%)';
-        e.currentTarget.querySelector('a').style.maxHeight = '4rem';
+        e.currentTarget.querySelector('a').style.maxHeight = '5rem';
       }
 
     const handleOnMouseLeave = (e) => {
